@@ -1,0 +1,41 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+<div class="container mt-10">
+    <div class="row pt-5">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+            <div class="card">
+                <div class="card-body">
+                   
+                    <h2>My Personal Information</h2>
+                    <table  style="width: 100%;">
+                        <tr>
+                            <td>First Name:</td>
+                            <td>{{ obj.firstname }}</td>
+                        </tr>
+                        <tr>
+                            <td>Last Name:</td>
+                            <td>{{ obj.lastname }}</td>
+                        </tr>
+                        <tr>
+                            <td>Status:</td>
+                            <td>{{ obj.status }}</td>
+                        </tr>
+                        <tr>
+                            <td>Mobile Number:</td>
+                            <td>{{ obj.mobilenum }}</td>
+                        </tr>
+                        <tr>
+                            <td>Addres:s</td>
+                            <td>{{ obj.address }}</td>
+                        </tr>
+                    </table>
+                   
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4"></div>
+    </div>
+</div>
+{% endblock content %}
